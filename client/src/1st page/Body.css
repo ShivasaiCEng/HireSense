@@ -1,0 +1,119 @@
+.Body {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    margin-top: 5rem;
+    font-family: sans-serif;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Body h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.Body h1 i {
+    color: #4CAF50;
+}
+
+.Body h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.Body h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.Body h3 i {
+    color: #4CAF50;
+    margin-right: 5px;
+}
+
+.Start-practising {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 15px auto;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s;
+    align-self: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.Start-practising:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.Start-practising:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.placeholder-video {
+    width: 100%;
+    height: 400px;
+    background-color: #f0f0f0;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.DemoVideo-text {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .Body h1 {
+        font-size: 2rem;
+    }
+    
+    .Body h2 {
+        font-size: 1.5rem;
+    }
+    
+    .Body h3 {
+        font-size: 1rem;
+    }
+    
+    .placeholder-video {
+        height: 300px;
+    }
+}

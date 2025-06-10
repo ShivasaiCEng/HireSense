@@ -1,0 +1,81 @@
+.sign-up {
+ display: inline-block;
+}
+.sign {
+    padding: 10px 20px;
+    background: transparent;
+    border: 1px solid #2ecc71;
+    border-radius: 10px;
+    cursor: pointer;
+    background-image: linear-gradient(90deg, rgb(214, 214, 240), rgb(10, 251, 10));
+    font-weight: 500;
+    transition: all 0.3s ease;
+    color: #333;
+    font-size: 16px;
+}
+.sign:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+    .form {
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+    top: 70px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    min-width: 300px;
+}
+    .sf {
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgb(53, 208, 208);
+        border-radius: 10px;
+        width: 150px;
+        margin-top: 0px;
+        margin-bottom: 15px;
+        text-align: center;
+        padding: 5px 0;
+        color: white;
+        font-weight: 600;
+    }
+    .su {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: rgb(149, 239, 247);
+    border-radius: 10px;
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+    font-weight: 500;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.su:hover {
+    background-color: rgb(100, 220, 230);
+    transform: scale(1.05);
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+    

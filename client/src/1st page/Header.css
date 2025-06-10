@@ -1,0 +1,84 @@
+.Header-text{
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid #d8d8d8;
+    border-radius: 12px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+    width: 90%;
+    max-width: 800px;
+    height: 4rem;
+    padding: 0 20px;
+}
+
+.Header-text a{
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.Header-text a i {
+    font-size: 14px;
+}
+
+.Header-text a:hover{
+    background-color: #eee8e8;
+}
+
+.Header-text .theme_light, .Header-text .theme_dark {
+    font-size: 18px;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.Header-text .theme_light:hover, .Header-text .theme_dark:hover {
+    background-color: #eee8e8;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .Header-text {
+        height: 3.5rem;
+    }
+    
+    .Header-text a {
+        font-size: 14px;
+        padding: 6px 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Header-text {
+        height: 3rem;
+        padding: 0 10px;
+    }
+    
+    .Header-text a {
+        font-size: 12px;
+        padding: 4px 6px;
+    }
+}
